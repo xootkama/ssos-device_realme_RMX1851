@@ -55,6 +55,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     dalvik.vm.boot-dex2oat-threads=8 \
     dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 
+# Fling
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.min.fling_velocity=160 \
+    ro.max.fling_velocity=20000
+
 # FM
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.fm.use_audio_session=true
