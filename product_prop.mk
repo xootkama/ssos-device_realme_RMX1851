@@ -82,6 +82,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.earlyGl.app.duration=21000000 \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3    
 
+# IO Cgroups
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.vendor.iocgrp.config=1
+
 # IORap
 PRODUCT_PRODUCT_PROPERTIES += \
     iorapd.readahead.enable=true
