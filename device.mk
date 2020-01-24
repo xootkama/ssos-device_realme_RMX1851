@@ -17,6 +17,10 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 29
 TARGET_SCREEN_HEIGHT := 2244
 TARGET_SCREEN_WIDTH := 1080
 
+# Charger
+PRODUCT_PACKAGES += \
+    product_charger_res_images
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
