@@ -99,6 +99,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.netflix.bsp_rev=Q670-14477-1
 
+# Perf
+PRODUCT_RPODUCT_PROPERTIES += \
+    ro.vendor.perf.scroll_opt=true
+
 # Privapp permissions whitelisting
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
