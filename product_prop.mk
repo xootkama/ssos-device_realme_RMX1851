@@ -117,6 +117,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1   
 
+# Seamless Transfer
+PRODUCT_PRODUCT_PROPERTIES += \
+    sys.fflag.override.settings_seamless_transfer=true
+
 # SSR
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.ssr.enable_ramdumps=0 \
