@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_RMX1851.mk
+    $(LOCAL_DIR)/ssos_RMX1851.mk
