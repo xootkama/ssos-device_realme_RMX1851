@@ -144,6 +144,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.realme_sdm710
 
+# VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v29/arm64/arch-arm-armv8-a/shared/vndk-sp/libcutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcutils-v29.so \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libcutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcutils-v29.so
+
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/wifi/WCNSS_qcom_cfg.ini
@@ -157,12 +162,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
 
-# PA common QTI components configuration
-TARGET_BOARD_PLATFORM := sdm710
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl
 
-TARGET_COMMON_QTI_COMPONENTS := \
-    display \
-    telephony \
-    wfd
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
--include device/qcom/common/common.mk
