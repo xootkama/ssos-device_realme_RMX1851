@@ -112,7 +112,8 @@ endif
 
 # Power
 PRODUCT_PACKAGES += \
-     android.hardware.power-service.realme_sdm710
+     android.hardware.power-service.realme_sdm710 \
+     android.hardware.power.stats@1.0-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_SYSTEM)/etc/powerhint.json
