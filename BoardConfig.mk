@@ -39,7 +39,7 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/realme/sdm710
 TARGET_KERNEL_ARCH := arm64
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/arm64-gcc/bin
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc-arm64/bin
 KERNEL_TOOLCHAIN_PREFIX := aarch64-elf-
 TARGET_KERNEL_CONFIG := sdm670-perf_defconfig
 

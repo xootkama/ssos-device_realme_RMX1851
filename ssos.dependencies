@@ -11,9 +11,9 @@
     "branch": "eleven"
   },
   {
-    "repository": "arter97/arm64-gcc",
-    "target_path": "prebuilts/arm64-gcc",
-    "branch": "master",
+    "repository": "mvaisakh/gcc-arm64",
+    "target_path": "prebuilts/gcc-arm64",
+    "branch": "lld-integration",
     "remote": "github"
   }
 ]
