@@ -77,6 +77,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.earlyGl.app.duration=21000000 \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3    
 
+# Iorap
+PRODUCT_PRODUCT_PROPERTIES += \
+    iorapd.perfetto.enable=true \
+    iorapd.readahead.enable=true
+
 # LMKD
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.low_ram=false \
