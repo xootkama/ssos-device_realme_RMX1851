@@ -40,7 +40,7 @@ TARGET_KERNEL_SOURCE := kernel/realme/RMX1851
 TARGET_KERNEL_ARCH := arm64
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc-arm64/bin
 KERNEL_TOOLCHAIN_PREFIX := aarch64-elf-
-TARGET_KERNEL_CONFIG := silont_defconfig
+TARGET_KERNEL_CONFIG := RMX1851_defconfig
 
 # Enable stats logging in LMKD
 TARGET_LMKD_STATS_LOG := true

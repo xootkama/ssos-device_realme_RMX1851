@@ -6,9 +6,9 @@
     "remote": "pixel-devices-blobs"
   },
   {
-    "repository": "silont-project/kernel_realme_RMX1851",
+    "repository": "stormbreaker-project/kernel_realme_RMX1851",
     "target_path": "kernel/realme/RMX1851",
-    "branch": "Q",
+    "branch": "reb",
     "remote": "github"
   },
   {
