@@ -156,6 +156,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Touch
+PRODUCT_PACKAGES += \
+    lineage.touch@1.0-service.realme_sdm710
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.realme_sdm710
