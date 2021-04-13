@@ -1,5 +1,4 @@
 type vendor_sysfs_graphics, sysfs_type, fs_type;
-type sysfs_usb_supply, sysfs_type, fs_type;
 
 # RealmeHub
 allow system_app vendor_sysfs_graphics:file { getattr open read };
