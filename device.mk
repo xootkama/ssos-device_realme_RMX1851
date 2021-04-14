@@ -53,10 +53,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/init.qcom.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init/hw/init.qcom.rc
 
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    RealmeParts
-
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \
