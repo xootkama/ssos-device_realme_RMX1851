@@ -45,10 +45,6 @@ import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.TwoStatePreference;
 
-import android.os.FileUtils;
-
-import org.lineageos.settings.device.SeekBarPreference;
-
 public class DeviceSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
@@ -56,8 +52,6 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_OTG_SWITCH = "otg";
     public static final String KEY_GAME_SWITCH = "game";
     public static final String PREF_KEY_FPS_INFO = "fps_info";
-    public static final String KEY_CHARGING_SWITCH = "smart_charging";
-    public static final String KEY_RESET_STATS = "reset_stats";
     public static final String KEY_DND_SWITCH = "dnd";
     public static final String KEY_CABC = "cabc";
     public static final String CABC_SYSTEM_PROPERTY = "persist.cabc_profile";
@@ -66,11 +60,8 @@ public class DeviceSettings extends PreferenceFragment
 
     private static TwoStatePreference mOTGModeSwitch;
     private static TwoStatePreference mGameModeSwitch;
-    private static TwoStatePreference mSmartChargingSwitch;
     private static NotificationManager mNotificationManager;
-    public static TwoStatePreference mResetStats;
     public static TwoStatePreference mDNDSwitch;
-    public static SeekBarPreference mSeekBarPreference;
     private SecureSettingListPreference mCABC;
 
     @Override
@@ -96,18 +87,6 @@ public class DeviceSettings extends PreferenceFragment
         mDNDSwitch = (TwoStatePreference) findPreference(KEY_DND_SWITCH);
         mDNDSwitch.setChecked(prefs.getBoolean(KEY_DND_SWITCH, false));
         mDNDSwitch.setOnPreferenceChangeListener(this);
-
-        mSmartChargingSwitch = (TwoStatePreference) findPreference(KEY_CHARGING_SWITCH);
-        mSmartChargingSwitch.setChecked(prefs.getBoolean(KEY_CHARGING_SWITCH, false));
-        mSmartChargingSwitch.setOnPreferenceChangeListener(new SmartChargingSwitch(getContext()));
-
-        mResetStats = (TwoStatePreference) findPreference(KEY_RESET_STATS);
-        mResetStats.setChecked(prefs.getBoolean(KEY_RESET_STATS, false));
-        mResetStats.setEnabled(mSmartChargingSwitch.isChecked());
-        mResetStats.setOnPreferenceChangeListener(this);
-
-        mSeekBarPreference = (SeekBarPreference) findPreference("seek_bar");
-        mSeekBarPreference.setEnabled(mSmartChargingSwitch.isChecked());
 
         mCABC = (SecureSettingListPreference) findPreference(KEY_CABC);
         mCABC.setValue(Utils.getStringProp(CABC_SYSTEM_PROPERTY, "0"));

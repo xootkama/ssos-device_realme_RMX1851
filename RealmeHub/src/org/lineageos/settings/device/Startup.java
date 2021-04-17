@@ -59,10 +59,6 @@ public class Startup extends BroadcastReceiver {
         if (enabled) {
             Utils.startService(context, FPSInfoService.class);
     }
-        enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_CHARGING_SWITCH, false);
-        if (enabled) {
-            Utils.startService(context, SmartChargingService.class);
-        }
     }
 
     private boolean hasRestoredTunable(Context context) {
