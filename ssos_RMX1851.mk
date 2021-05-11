@@ -38,7 +38,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="RMX1851"
 
 # Set BUILD_FINGERPRINT variable to be picked up by system build.prop
-    BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys"
+    BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys"
 
 # SSOS Official Flags
 SSOS_BUILD_TYPE := OFFICIAL
