@@ -28,7 +28,7 @@ $(call inherit-product, device/realme/RMX1851/device.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := _RMX1851
+PRODUCT_NAME := yaap_RMX1851
 PRODUCT_DEVICE := RMX1851
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := realme
