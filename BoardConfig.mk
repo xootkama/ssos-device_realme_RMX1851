@@ -39,7 +39,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 KERNEL_LD := LD=ld.lld
 TARGET_KERNEL_SOURCE := kernel/realme/RMX1851
 TARGET_KERNEL_NEW_GCC_COMPILE := false
-TARGET_KERNEL_CONFIG := lineage_RMX1851_defconfig
+TARGET_KERNEL_CONFIG := KharaMe_defconfig
 
 # Enable stats logging in LMKD
 TARGET_LMKD_STATS_LOG := true
