@@ -22,11 +22,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common SSOS stuff.
-$(call inherit-product, vendor/ssos/config/common_full_phone.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 $(call inherit-product, device/realme/RMX1851/device.mk)
 
-PRODUCT_NAME := ssos_RMX1851
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_NAME := _RMX1851
 PRODUCT_DEVICE := RMX1851
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := realme
@@ -36,15 +38,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-realme
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="RMX1851"
-
-# Set BUILD_FINGERPRINT variable to be picked up by system build.prop
-    BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys"
-
-# SSOS Official Flags
-SSOS_BUILD_TYPE := OFFICIAL
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_BOOT_ANIMATION_RES := 1080
-
-# ShapeShiftOS props
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.ssos.cpu=SD710
