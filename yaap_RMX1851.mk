@@ -38,3 +38,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-realme
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="RMX1851"
+    
+#USB
+
+android.hardware.usb@1.0-service.basic
