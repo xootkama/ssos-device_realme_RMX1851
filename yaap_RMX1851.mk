@@ -40,5 +40,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="RMX1851"
     
 #USB
-
-android.hardware.usb@1.0-service.basic
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service.basic
